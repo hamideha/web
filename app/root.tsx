@@ -18,6 +18,8 @@ import {
 } from "~/utils/theme";
 import { getThemeSession } from "~/utils/theme.server";
 
+import Navbar from "~/components/navbar";
+
 import tailwind from "~/styles/tailwind.css";
 import styles from "~/styles/app.css";
 
@@ -86,8 +88,9 @@ function App() {
         />
         <NonFlashOfWrongThemeEls ssrTheme={Boolean(theme)} />
       </head>
-      <body className="bg-alice dark:bg-oxford text-gray-700 dark:text-alice transition duration-75 scroll-smooth font-gilmer">
-        <div className="relative max-w-xl mx-auto px-3 sm:px-8 lg:px-60 lg:max-w-screen-xl pb-10">
+      <body className="bg-alice dark:bg-oxford text-gray-700 dark:text-alice transition duration-75 scroll-smooth font-gilmer max-w-5xl px-5 mx-auto">
+        <Navbar />
+        <div className="relative ">
           <Outlet />
         </div>
         <ScrollRestoration />

@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        'oxford': '#0C1A29', //001333
+        'oxford': '#0F171E', 
         'flame': '#F56025',
         'yonder': '#577399',
         'beau': '#BDD5EA',
